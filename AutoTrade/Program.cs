@@ -118,6 +118,8 @@ namespace CryptoConsoleApp
                     {
                         Console.WriteLine(
                             @$"There was an error in submitting order to the Front-office {JsonSerializer.Serialize(orderData, new JsonSerializerOptions { WriteIndented = true })}");
+                        
+                        Console.WriteLine(e);
                     }
 
                     Console.WriteLine($"Successfully placed a {type} order.");
