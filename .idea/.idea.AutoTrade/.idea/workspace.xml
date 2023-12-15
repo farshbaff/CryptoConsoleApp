@@ -4,7 +4,10 @@
     <projectFile>AutoTrade/AutoTrade.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17467a00-e230-44f9-be37-1e3002e2f70d" name="Changes" comment="" />
+    <list default="true" id="17467a00-e230-44f9-be37-1e3002e2f70d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.AutoTrade/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTrade/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTrade/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ZZKfhmmDoNgolUytE50gtVgc1E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702624266573</updated>
-      <workItem from="1702624268132" duration="4133000" />
+      <workItem from="1702624268132" duration="4560000" />
     </task>
     <servers />
   </component>
@@ -78,26 +82,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AutoTrade/Program.cs</url>
-          <line>60</line>
+          <line>63</line>
           <properties documentPath="C:\Users\Mehdi\RiderProjects\AutoTrade\AutoTrade\Program.cs" initialLine="63" containingFunctionPresentation="method 'PlaceOrder'">
             <startOffsets>
-              <option value="2587" />
+              <option value="2793" />
             </startOffsets>
             <endOffsets>
-              <option value="3193" />
+              <option value="3399" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AutoTrade/Program.cs</url>
-          <line>58</line>
+          <line>61</line>
           <properties documentPath="C:\Users\Mehdi\RiderProjects\AutoTrade\AutoTrade\Program.cs" initialLine="61" containingFunctionPresentation="method 'PlaceOrder'">
             <startOffsets>
-              <option value="2497" />
+              <option value="2703" />
             </startOffsets>
             <endOffsets>
-              <option value="2545" />
+              <option value="2751" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
@@ -107,49 +111,49 @@
           <line>45</line>
           <properties documentPath="C:\Users\Mehdi\RiderProjects\AutoTrade\AutoTrade\Program.cs" initialLine="48" containingFunctionPresentation="method 'PlaceOrder'">
             <startOffsets>
-              <option value="1684" />
+              <option value="1693" />
             </startOffsets>
             <endOffsets>
-              <option value="1759" />
+              <option value="1768" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AutoTrade/Program.cs</url>
-          <line>46</line>
+          <line>47</line>
           <properties documentPath="C:\Users\Mehdi\RiderProjects\AutoTrade\AutoTrade\Program.cs" initialLine="49" containingFunctionPresentation="method 'PlaceOrder'">
             <startOffsets>
-              <option value="1780" />
+              <option value="1891" />
             </startOffsets>
             <endOffsets>
-              <option value="1855" />
+              <option value="1966" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AutoTrade/Program.cs</url>
-          <line>50</line>
+          <line>51</line>
           <properties documentPath="C:\Users\Mehdi\RiderProjects\AutoTrade\AutoTrade\Program.cs" initialLine="53" containingFunctionPresentation="method 'PlaceOrder'">
             <startOffsets>
-              <option value="1989" />
+              <option value="2102" />
             </startOffsets>
             <endOffsets>
-              <option value="2057" />
+              <option value="2170" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AutoTrade/Program.cs</url>
-          <line>110</line>
+          <line>113</line>
           <properties documentPath="C:\Users\Mehdi\RiderProjects\AutoTrade\AutoTrade\Program.cs" initialLine="114" containingFunctionPresentation="method 'GetLastTradeAmountAsync'">
             <startOffsets>
-              <option value="4909" />
+              <option value="5115" />
             </startOffsets>
             <endOffsets>
-              <option value="4944" />
+              <option value="5150" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />

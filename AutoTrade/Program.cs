@@ -43,20 +43,23 @@ namespace CryptoConsoleApp
             {
                 while (!cancellationToken.IsCancellationRequested)
                 {
-                    decimal btcUsdPrice = await GetLatestPrice(CoinGeckoBtcUsdPriceUrl, "usd");
-                    decimal btcEthPrice = await GetLatestPrice(CoinGeckoBtcEthPriceUrl, "eth");
-                    decimal usdAmount = 10; 
+                    //decimal btcUsdPrice = await GetLatestPrice(CoinGeckoBtcUsdPriceUrl, "usd");
+                    decimal btcUsdcPrice = await GetLatestPrice(CoinGeckoBtcUsdPriceUrl, "usd-coin");
+                    //decimal btcEthPrice = await GetLatestPrice(CoinGeckoBtcEthPriceUrl, "eth");
+                    //decimal usdAmount = 10; 
 
                     // Get the equivalent amount in ETH for 10 USD
-                    decimal ethEquivalentForUsd = usdAmount / btcUsdPrice * btcEthPrice;
+                    //decimal ethEquivalentForUsd = usdAmount / btcUsdPrice * btcEthPrice;
         
                     // Get a random value between 0 and the previous ETH equivalent value 
-                    decimal randomAmountInEth = (decimal)random.NextDouble() * ethEquivalentForUsd;
+                    //decimal randomAmountInEth = (decimal)random.NextDouble() * ethEquivalentForUsd;
 
                     // Modify the order price based on randomAmountInEth
-                    decimal orderPrice = type == "buy" ? btcEthPrice - randomAmountInEth : btcEthPrice + randomAmountInEth;
+                    //decimal orderPrice = type == "buy" ? btcEthPrice - randomAmountInEth : btcEthPrice + randomAmountInEth;
+
+                    decimal orderPrice = btcUsdcPrice + RandomDecimalBetween(0, 10);
                     
-                    decimal lastTradeAmount = OrderVolumeBuilder(0);
+                    decimal orderAmount = OrderVolumeBuilder(0);
                     
                     var orderData = new
                     {
@@ -64,7 +67,7 @@ namespace CryptoConsoleApp
                         {
                             instrument = "btc_eth",
                             type,
-                            amount = lastTradeAmount,
+                            amount = orderAmount,
                             price = orderPrice,
                             activationPrice = 0m,
                             isLimit = true,
@@ -134,6 +137,15 @@ namespace CryptoConsoleApp
             decimal orderVolume = decimal.Parse(orderVolumeString);
 
             return orderVolume;
+        }
+        
+        public static decimal RandomDecimalBetween(decimal min, decimal max)
+        {
+            decimal range = max - min;
+            double randomDouble = random.NextDouble();
+            decimal randomInRange = Convert.ToDecimal(randomDouble) * range + min;
+        
+            return Math.Round(randomInRange, 2);
         }
     }
 }
